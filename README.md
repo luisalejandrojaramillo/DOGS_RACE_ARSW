@@ -12,4 +12,4 @@ independent threads. For now, it has a single thread that seeks cousins ​​
 between 0 and 30,000,000. Run it, open the operating system process manager, 
 and verify how many cores are used by it.
 
-![](/img/parte1_1.png)
+![](/img/dr_parte1_1.png)
