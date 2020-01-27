@@ -2,8 +2,8 @@ Realizado por Luis Alejandro Jaramillo y  Carlos Andrés Castañeda
 
 # DOGS_RACE_ARSW
 
-##Part I
-###Creation, commissioning and coordination of threads.
+## Part I
+### Creation, commissioning and coordination of threads.
 
 1. Review the "concurrent cousins" program (in the folder part1), provided 
 in the package edu.eci.arsw.primefinder. This is a program that calculates 
