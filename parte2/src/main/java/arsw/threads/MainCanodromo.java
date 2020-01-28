@@ -2,6 +2,8 @@ package arsw.threads;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.JButton;
 
@@ -37,6 +39,13 @@ public class MainCanodromo {
                                     //inicia los hilos
                                     galgos[i].start();
 
+                                }
+                                for (int i = 0; i < can.getNumCarriles(); i++) {
+                                    try {
+                                        galgos[i].join();
+                                    } catch (InterruptedException e) {
+                                        Logger.getLogger(MainCanodromo.class.getName()).log(Level.SEVERE, null, e);
+                                    }
                                 }
                                
 				can.winnerDialog(reg.getGanador(),reg.getUltimaPosicionAlcanzada() - 1); 
