@@ -23,8 +23,6 @@ public class PrimeFinderThread extends Thread{
 				System.out.println(i);
 			}
 		}
-		
-		
 	}
 	
 	boolean isPrime(int n) {
@@ -39,8 +37,4 @@ public class PrimeFinderThread extends Thread{
 	public List<Integer> getPrimes() {
 		return primes;
 	}
-	
-	
-	
-	
 }
