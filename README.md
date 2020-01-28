@@ -1,6 +1,6 @@
 Realizado por Luis Alejandro Jaramillo y  Carlos Andrés Castañeda
 
-# DOGS_RACE_ARSW
+# DOGS RACE ARSW
 
 ## Part I
 ### Creation, commissioning and coordination of threads.
