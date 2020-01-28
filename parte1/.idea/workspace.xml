@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0621a812-0936-47d4-bb75-c25d2f64b56b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/primefinder/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/primefinder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/primefinder/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/primefinder/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/primefinder/ControlThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/primefinder/PrimeFinderThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/primefinder/PrimeFinderThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,22 +79,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1324" height="134" key="GridCell.Tab.0.bottom" timestamp="1580235140683">
+    <state x="445" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580243501392">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="134" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580235140683" />
-    <state width="1324" height="134" key="GridCell.Tab.0.center" timestamp="1580235140680">
+    <state x="445" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1580243501392" />
+    <state width="1324" height="298" key="GridCell.Tab.0.bottom" timestamp="1580250032527">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="134" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1580235140680" />
-    <state width="1324" height="134" key="GridCell.Tab.0.left" timestamp="1580235140679">
+    <state width="1324" height="298" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580250032527" />
+    <state width="1324" height="298" key="GridCell.Tab.0.center" timestamp="1580250032525">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="134" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1580235140679" />
-    <state width="1324" height="134" key="GridCell.Tab.0.right" timestamp="1580235140681">
+    <state width="1324" height="298" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1580250032525" />
+    <state width="1324" height="298" key="GridCell.Tab.0.left" timestamp="1580250032524">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="134" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1580235140681" />
+    <state width="1324" height="298" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1580250032524" />
+    <state width="1324" height="298" key="GridCell.Tab.0.right" timestamp="1580250032526">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1324" height="298" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1580250032526" />
+    <state x="348" y="177" width="670" height="675" key="run.anything.popup" timestamp="1580237929977">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="348" y="177" width="670" height="675" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1580237929977" />
   </component>
   <component name="masterDetails">
     <states>
