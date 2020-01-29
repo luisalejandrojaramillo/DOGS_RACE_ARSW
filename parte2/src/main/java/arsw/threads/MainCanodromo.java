@@ -61,6 +61,9 @@ public class MainCanodromo {
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
+                        for (int i = 0; i < can.getNumCarriles(); i++) {
+                            galgos[i].doPause();
+                        }
                         System.out.println("Carrera pausada!");
                     }
                 }
@@ -70,11 +73,22 @@ public class MainCanodromo {
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
+                        synchronized(reg){
+                            reg.notifyAll();
+                        }
+                        for (int i = 0; i < can.getNumCarriles(); i++) {
+                            synchronized(galgos[i]){
+                                galgos[i].doPause();
+                            }
+                        }
                         System.out.println("Carrera reanudada!");
                     }
                 }
         );
 
+    }
+    public static RegistroLlegada getReg(){
+        return reg;
     }
 
 }
