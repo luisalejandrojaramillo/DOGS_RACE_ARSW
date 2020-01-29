@@ -75,7 +75,7 @@ Cuando todos llegan a la meta, ya que compartian un recurso y eso generaba falla
 3. Use a synchronization mechanism to ensure that these critical regions only access 
 one thread at a time. Verify the results.
 
-![](/img/parte3_1.png)
+![](/img/parte3_1.PNG)
 
 4. Implement the pause and continue functionalities. With these, when "Stop" is clicked, 
 all the threads of the greyhounds should fall asleep, and when "Continue" is clicked they 
