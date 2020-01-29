@@ -69,10 +69,13 @@ all the ‘greyhound’ threads is finished. For this keep in mind:
 identify the inconsistencies in the results of the same by seeing the ‘ranking’ shown 
 on the console (sometimes valid results could appear, but in other cases such inconsis-
 tencies may occur). From this, identify the critical regions of the program.
-	=Cuando todos llegan a la meta.
+
+Cuando todos llegan a la meta, ya que compartian un recurso y eso generaba fallas. 
 	
 3. Use a synchronization mechanism to ensure that these critical regions only access 
 one thread at a time. Verify the results.
+
+![](/img/parte3_1.png)
 
 4. Implement the pause and continue functionalities. With these, when "Stop" is clicked, 
 all the threads of the greyhounds should fall asleep, and when "Continue" is clicked they 
