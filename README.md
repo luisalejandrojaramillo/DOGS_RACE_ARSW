@@ -8,12 +8,11 @@ Realizado por Luis Alejandro Jaramillo y  Carlos Andrés Castañeda
 1. Review the "concurrent cousins" program (in the folder part1), provided 
 in the package edu.eci.arsw.primefinder. This is a program that calculates 
 the prime numbers between two intervals, distributing their search among 
-independent threads. For now, it has a single thread that seeks cousins ​​
+independent threads. For now, it has a single thread that seeks cousins 
 between 0 and 30,000,000. Run it, open the operating system process manager, 
 and verify how many cores are used by it.
 
 ![](/img/dr_parte1_1.png)
-
 ![](/img/dr_parte1_2.png)
 
 2. Modify the program so that, instead of solving the problem with a single
@@ -27,10 +26,11 @@ and verify how many cores are used by it.
 
 3. What you have been asked for is: you must modify the application so that 
 when 5 seconds have elapsed since the execution started, all the threads are 
-stopped and the number of primes ​​found so far is displayed. Then, you must wait 
+stopped and the number of primes found so far is displayed. Then, you must wait 
 for the user to press ENTER to resume their execution.
 
 ## Part II
+
 For this exercise, you will work with a greyhound racing simulator (folder part2),
 whose graphic representation corresponds to the following figure:
 
@@ -52,34 +52,52 @@ arrival position, and then increases it by 1. The greyhound that manages to take
 '1' will be the winner.
 
 When starting the application, there is a first obvious error: the results (total run
- and number of the winning greyhound) are shown before the end of the race as such. 
- However, once this is corrected, there may be more inconsistencies caused by the 
- presence of race conditions.
+and number of the winning greyhound) are shown before the end of the race as such. 
+However, once this is corrected, there may be more inconsistencies caused by the 
+presence of race conditions.
 
 ## Part III
 
-1. Fix the application so that the results notice is shown only when the execution of 
-all the ‘greyhound’ threads is finished. For this keep in mind:
-	- The action of starting the race and showing the results is carried out from 
-	line 38 of MainCanodromo.
-	- The join() method of the Thread class can be used to synchronize the thread that 
+**Fix the application so that the results notice is shown only when the execution of 
+all the ‘greyhound’ threads is finished. For this keep in mind:**
+
+* The action of starting the race and showing the results is carried out fromline 38 of MainCanodromo.
+* The join() method of the Thread class can be used to synchronize the thread that 
 	starts the race, with the completion of the greyhound threads.
 	
-2. Once the initial problem has been corrected, run the application several times, and 
+**Once the initial problem has been corrected, run the application several times, and 
 identify the inconsistencies in the results of the same by seeing the ‘ranking’ shown 
 on the console (sometimes valid results could appear, but in other cases such inconsis-
-tencies may occur). From this, identify the critical regions of the program.
+tencies may occur). From this, identify the critical regions of the program.**
 
-Cuando todos llegan a la meta, ya que compartian un recurso y eso generaba fallas. 
+* Cuando todos llegan a la meta, ya que compartian un recurso y eso generaba fallas. 
 	
-3. Use a synchronization mechanism to ensure that these critical regions only access 
-one thread at a time. Verify the results.
+**Use a synchronization mechanism to ensure that these critical regions only access 
+one thread at a time. Verify the results.**
 
 ![](/img/parte3_1.PNG)
 
-4. Implement the pause and continue functionalities. With these, when "Stop" is clicked, 
+**Implement the pause and continue functionalities. With these, when "Stop" is clicked, 
 all the threads of the greyhounds should fall asleep, and when "Continue" is clicked they 
 should wake up and continue with the race. Design a solution that allows you to do this 
 using the synchronization mechanisms with the Locks primitives provided by the language 
-(wait and notifyAll).
+(wait and notifyAll).**
+
+## Compile and run instructions
+
+* Para cada una de las pruebas se implementó **JUnit** y **Maven**.
+* Proyecto creado en **IntelliJ IDEA**.
+
+**Compiling**
+```
+$ mvn clean compile
+```
+**Packing**
+```
+$ mvn package
+```    
+**Execute**
+```
+$ mvn exec:java -D exec.mainClass="arsw.threads.Canodromo"
+```
 
